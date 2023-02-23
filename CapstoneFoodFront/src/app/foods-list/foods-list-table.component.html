@@ -1,0 +1,53 @@
+<div class="center"><h1>List Of Foods</h1></div>
+&nbsp;
+<div class="container table">
+    
+    
+    <table class="table bg-light">
+       
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Avatar</th>
+            </tr>
+        
+        
+            <tr *ngFor= "let food of foods">
+                <th>{{food.id}}</th>
+                <td>{{food.name}}</td>
+                <td>{{food.description}}</td>
+                <td>{{food.availability}}</td>
+                <td>{{food.price}}</td>
+                <td><img alt="{{food.name}}'s image" style="width: 200px; height: 200px;" [src]="food.avatar"/></td>
+                <td><div><button class="btn btn-info"  (click)="addToCart(food)">Add to Cart</button></div></td>
+               
+                
+               
+              </tr>
+        
+    </table>
+</div>
+&nbsp;
+
+<a href="/loginsucces" class="link-secondary">Back</a>
+
+
+        
+        
+     
+     
+        
+        
+      
+        
+        
+     
+     
+        
+        
+     
+
+
